@@ -16,12 +16,12 @@ int j;
 int day[20];
 
 int main(){
-cout<<"Digite el número de su tarjeta"<<endl;
+cout<<"Digite el nÃºmero de su tarjeta"<<endl;
 cin>>numero_tarjeta;
 
 if (numero_tarjeta.length()< 16 || numero_tarjeta.length() > 16 )
 {
-	cout << "Está mal";
+	cout << "EstÃ¡ mal";
 	return 1; // ojo que no sabia de <----
 }
 for (int i = 0;i < numero_tarjeta.length(); i++)
