@@ -2,11 +2,11 @@
 #include <string>
 using namespace std;
 /*
-Autor: Valeria Enríquez Limón A00832782
-Fecha de creación: 25 de Noviembre del 2021
+Autor: Valeria EnrÃ­quez LimÃ³n A00832782
+Fecha de creaciÃ³n: 25 de Noviembre del 2021
 
-Tomando la situacion del Covid-19 en el mundo, y el ODS de reducción de desigualdades, este programa se encargara de realizar una simulación de una App que permita ofrecer descuentos
-de acuerdo a lo solicitado por el usuario. Esto permitirá dar un apoyo a las personas de escasos recursos.
+Tomando la situacion del Covid-19 en el mundo, y el ODS de reducciÃ³n de desigualdades, este programa se encargara de realizar una simulaciÃ³n de una App que permita ofrecer descuentos
+de acuerdo a lo solicitado por el usuario. Esto permitirÃ¡ dar un apoyo a las personas de escasos recursos.
 
 */
 class Usuario{
@@ -29,7 +29,7 @@ public:
 		this->numTarjeta = 320093405;
 	}
 	//Contructor
-	Usuario(string nombre, string pais, string tipoTarjeta, int telefono, int edad, int numTarjeta){ //Pointers básicos para definir las variables
+	Usuario(string nombre, string pais, string tipoTarjeta, int telefono, int edad, int numTarjeta){ //Pointers bÃ¡sicos para definir las variables
 		this->nombre = nombre;
 		this->pais = pais;
 		this->tipoTarjeta = tipoTarjeta;
@@ -41,48 +41,48 @@ public:
 		void setNombre(string nombre){
 			this -> nombre= nombre;
 		}
-			void setEdad(int edad){
-				this -> edad= edad;
-			}
-				void setPais(string pais){
-					this -> pais= pais;
-				}
-					void settipoTarjeta(string tipoTarjeta){
-						this -> tipoTarjeta= tipoTarjeta;
-					}
-						void setTelefono(int telefono){
-							this -> telefono= telefono;
-						}
-							void setnumTarjeta(int numTarjeta){
-								this -> numTarjeta= numTarjeta;
-							}
+		void setEdad(int edad){
+			this -> edad= edad;
+		}
+		void setPais(string pais){
+			this -> pais= pais;
+		}
+		void settipoTarjeta(string tipoTarjeta){
+			this -> tipoTarjeta= tipoTarjeta;
+		}
+		void setTelefono(int telefono){
+			this -> telefono= telefono;
+		}
+		void setnumTarjeta(int numTarjeta){
+			this -> numTarjeta= numTarjeta;
+		}
 								
-								string getNombre(){
-									return nombre;
-								}
-									int getEdad(){
-										return edad;
-									}
-										string getPais(){
-											return pais;
-										}
-											string gettipoTarjeta(){
-												return tipoTarjeta;
-											}
-												int getTelefono(){
-													return telefono;
-												}
-													int getnumTarjeta(){
-														return numTarjeta;
-													}
-														void mostrar(){ //Funcion que permite mostrar datos básicos del usuario
-															cout<<"Nombre: "<<getNombre()<<endl;
-															cout<<"Edad: "<<getEdad()<<endl;
-															cout<<"País: "<<getPais()<<endl;
-															cout<<"Telefóno: "<<getTelefono()<<endl;
-															cout<<"Tipo de tarjeta: "<<gettipoTarjeta()<<endl;
-															cout<<"Número de tarjeta: "<<getnumTarjeta()<<endl;
-														}
+		string getNombre(){
+			return nombre;
+		}
+		int getEdad(){
+			return edad;
+		}
+		string getPais(){
+			return pais;
+		}
+		string gettipoTarjeta(){
+			return tipoTarjeta;
+		}
+		int getTelefono(){
+			return telefono;
+		}
+		int getnumTarjeta(){
+			return numTarjeta;
+		}
+		void mostrar(){ //Funcion que permite mostrar datos bÃ¡sicos del usuario
+			cout<<"Nombre: "<<getNombre()<<endl;
+			cout<<"Edad: "<<getEdad()<<endl;
+			cout<<"PaÃ­s: "<<getPais()<<endl;
+			cout<<"TelefÃ³no: "<<getTelefono()<<endl;
+			cout<<"Tipo de tarjeta: "<<gettipoTarjeta()<<endl;
+			cout<<"NÃºmero de tarjeta: "<<getnumTarjeta()<<endl;
+		}
 };
 
 class Platino: public Usuario{ //Herencia
@@ -107,28 +107,28 @@ public:
 	void setSalario(int salario){
 		this -> salario= salario;
 	}
-		void setMesesSinIntereses(int mesesSinIntereses){
-			this -> mesesSinIntereses= mesesSinIntereses;
-		}
-			void setDescuento(string descuento){
-				this -> descuento= descuento;
-			}
+	void setMesesSinIntereses(int mesesSinIntereses){
+		this -> mesesSinIntereses= mesesSinIntereses;
+	}
+	void setDescuento(string descuento){
+		this -> descuento= descuento;
+	}
 				
-				int getSalario(){
-					return salario;
-				}
-					int getMesesSinIntereses(){
-						return mesesSinIntereses;
-					}
-						string getDescuento(){
-							return descuento;
-						}
-							void  mostrarPlatino(){ //Función que permite mostrar los datos de Platino
-								mostrar();
-								cout<<"Tu salario es: "<< salario <<endl;
-								cout<<"Tus meses sin intereses son: "<< mesesSinIntereses <<endl;
-								cout<<"Tu descuento es: "<< descuento <<endl;
-							} 
+	int getSalario(){
+		return salario;
+	}
+	int getMesesSinIntereses(){
+		return mesesSinIntereses;
+	}
+	string getDescuento(){
+		return descuento;
+	}
+	void  mostrarPlatino(){ //FunciÃ³n que permite mostrar los datos de Platino
+		mostrar();
+		cout<<"Tu salario es: "<< salario <<endl;
+		cout<<"Tus meses sin intereses son: "<< mesesSinIntereses <<endl;
+		cout<<"Tu descuento es: "<< descuento <<endl;
+	} 
 };
 class Premium: public Usuario{ //Herencia
 	
@@ -150,25 +150,25 @@ public:
 	void setInfo(int info){
 		this -> info= info;
 	}
-		void setSatisfaccion(string satisfaccion){
-			this -> satisfaccion= satisfaccion;
-		}
+	void setSatisfaccion(string satisfaccion){
+		this -> satisfaccion= satisfaccion;
+	}
 			
-			int getInfo(){
-				return info;
-			}
-				string getSatisfaccion(){
-					return satisfaccion;
-				}
-					void  mostrarPremium(){ //Función que permite mostrar los datos de Premium
-						mostrar();
-						cout<<"Tu nivel de satisfacción es:"<< info <<endl;
-						cout<<"¿Seguiras usando esta App? "<< satisfaccion <<endl;
-					} 
+	int getInfo(){
+		return info;
+	}
+	string getSatisfaccion(){
+		return satisfaccion;
+	}
+	void  mostrarPremium(){ //FunciÃ³n que permite mostrar los datos de Premium
+		mostrar();
+		cout<<"Tu nivel de satisfacciÃ³n es:"<< info <<endl;
+		cout<<"Â¿Seguiras usando esta App? "<< satisfaccion <<endl;
+	} 
 };
 
 int main() {
-	Usuario arrayUsuario[100]; //Inicializar array para tomar una cuenta de los usuarios que seguirán usando la app.
+	Usuario arrayUsuario[100]; //Inicializar array para tomar una cuenta de los usuarios que seguirÃ¡n usando la app.
 	Usuario datos;
 	Platino usuarioPlatino ;
 	Premium usuarioPremium;
@@ -178,7 +178,7 @@ int main() {
 	string descuento, satisfaccion;
 	string sPais,sTipoTarjeta,sNombre, temp = "";
 	
-	do{ // Utilzación de un switch para organizar la estructura de la App
+	do{ // UtilzaciÃ³n de un switch para organizar la estructura de la App
 		int iTarjeta;
 		
 		
@@ -189,11 +189,11 @@ int main() {
 		switch (iTarjeta) {
 			
 		case 1: //Caso de Platino
-			cout<<"¿Cómo te llamas?"<<endl;
+			cout<<"Â¿CÃ³mo te llamas?"<<endl;
 			cin>>sNombre;
-			cout<<"Ingrese su País: "<<endl;
+			cout<<"Ingrese su PaÃ­s: "<<endl;
 			cin>>sPais;
-			cout<<"¿Cual es tu edad?"<<endl;
+			cout<<"Â¿Cual es tu edad?"<<endl;
 			cin>>iEdad;
 			var_bool = true;
 			while (var_bool){
@@ -206,14 +206,14 @@ int main() {
 				}
 			}
 			datos.settipoTarjeta("Platino");
-			cout<<"Ingrese su Telefóno: "<<endl;
+			cout<<"Ingrese su TelefÃ³no: "<<endl;
 			cin>>sTelefono;
-			cout<<"Ingrese su número de tarjeta: "<<endl;
+			cout<<"Ingrese su nÃºmero de tarjeta: "<<endl;
 			cin>>iNumTarjeta;
 			cout<<"Ingrese su salario por quincena:"<<endl;
 			cin>> salario;
-			if(salario>10000){  //Revisa que el usuario esté necesitado económicamente
-				cout<<"----Tienes que estar necesitado económicamente para requerir ayuda financiera con esta app----"<<endl;
+			if(salario>10000){  //Revisa que el usuario estÃ© necesitado econÃ³micamente
+				cout<<"----Tienes que estar necesitado econÃ³micamente para requerir ayuda financiera con esta app----"<<endl;
 				break;
 			}
 			cout<<"Ingrese el descuento que requiere:"<<endl;
@@ -223,7 +223,7 @@ int main() {
 			if(mesesSinIntereses>12){
 				cout<<"----Discupa, no pueden ser mas de 12 meses----"<<endl;
 				cout<<"Vuelve a ingresar los meses sin intereses que requieres:"<<endl;
-				cin>>mesesSinIntereses; //Revisa que los meses sin interéses sean menores que 12.
+				cin>>mesesSinIntereses; //Revisa que los meses sin interÃ©ses sean menores que 12.
 				break;
 			}
 			
@@ -249,11 +249,11 @@ int main() {
 			break;
 			
 		case 2: //Caso de Premium
-			cout<<"¿Cómo te llamas?"<<endl;
+			cout<<"Â¿CÃ³mo te llamas?"<<endl;
 			cin>>sNombre;
-			cout<<"Ingrese su País: "<<endl;
+			cout<<"Ingrese su PaÃ­s: "<<endl;
 			cin>>sPais;
-			cout<<"¿Cual es tu edad?"<<endl;
+			cout<<"Â¿Cual es tu edad?"<<endl;
 			cin>>iEdad;
 			var_bool = true;
 			while (var_bool){
@@ -265,18 +265,18 @@ int main() {
 					var_bool = false;
 				}
 			}
-			c++; //Agrega más valores al contador
+			c++; //Agrega mÃ¡s valores al contador
 			datos.settipoTarjeta("Premium");
-			cout<<"Ingrese su Telefóno: "<<endl;
+			cout<<"Ingrese su TelefÃ³no: "<<endl;
 			cin>>sTelefono;
-			cout<<"Ingrese su número de tarjeta: "<<endl;
+			cout<<"Ingrese su nÃºmero de tarjeta: "<<endl;
 			cin>>iNumTarjeta;
 			
-			cout<<"Agradecemos su presencia en nuestra App. Esperamos que estés satisfechx con nuestro trabajo. Responde del (1-10) con el rango de su satisfacción con la App."<<endl;
+			cout<<"Agradecemos su presencia en nuestra App. Esperamos que estÃ©s satisfechx con nuestro trabajo. Responde del (1-10) con el rango de su satisfacciÃ³n con la App."<<endl;
 			cin>> info;
-			cout<<"¿Seguirá usando nuestra App (Si/No)?"<<endl;
+			cout<<"Â¿SeguirÃ¡ usando nuestra App (Si/No)?"<<endl;
 			cin>> satisfaccion;
-			if(satisfaccion=="Si"){ //El número del array depende de los usuarios que seguirán utilizando la app.
+			if(satisfaccion=="Si"){ //El nÃºmero del array depende de los usuarios que seguirÃ¡n utilizando la app.
 				arrayUsuario[c] = datos;
 			}
 			
